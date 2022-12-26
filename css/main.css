@@ -1,0 +1,108 @@
+html, body, #wrapper {
+    width: 100%;
+    height: 100%;
+    font-family: "Courier New", Courier, monospace;
+}
+
+#wrapper {
+    display: flex;
+    overflow: hidden;
+}
+
+fieldset, .node {
+    border: 3px solid #aaa;
+}
+
+fieldset {
+    padding: 5px;
+    margin: 2px;
+}
+
+.col {
+    overflow: scroll;
+}
+
+legend {
+    user-select: none;
+}
+
+.flex {
+    display: flex;
+    padding: 0px 5px;
+}
+
+.even {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=range] {
+    width: 70%;
+}
+
+.node-inputs {
+    flex: 1;
+}
+
+.exit {
+    width: 15px;
+}
+
+.exit::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    content: "\d7";
+}
+
+.rarr::before {
+    content: "\2192"
+}
+
+.gutter {
+    cursor: col-resize;
+}
+
+#col-left {
+    display: flex;
+    flex-direction: column;
+
+    width: 30%;
+}
+
+#col-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td:last-child {
+    float: right;
+}
+
+tbody, table {
+    width: 100%;
+}
+
+#properties {
+    height: 10%;
+}
+
+#nodes {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.node {
+    display: flex;
+    margin: 5px 0px;
+    padding: 5px 2px;
+}
