@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+    <head>
+        <title>Colour Replacer</title>
+
+        <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    </head>
+
+    <body>
+        <main id="wrapper">
+            <fieldset id="col-left" class="col">
+                <legend>Properties</legend>
+                <noscript>Please enable javascript, or upgrade to a newer browser.</noscript>
+
+                <fieldset id="properties">
+                    <legend>Image properties:</legend>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Width:</td>
+                                <td id="width"></td>
+                            </tr>
+                            <tr>
+                                <td>Height:</td>
+                                <td id="height"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+                <fieldset id="nodes_wrapper">
+                    <legend>Rules</legend>
+                    <div id="nodes"></div>
+                </fieldset>
+                <button id="new-node" disabled>New Rule</button>
+            </fieldset>
+            <fieldset id="col-right" class="col">
+                <legend>Image</legend>
+                <span id="dnd-message">Drag + Drop your image here!</span>
+                <canvas style="display: none;">Sorry, your browser does not support Canvas. Please upgrade to a newer browser.</canvas>
+            </fieldset>
+        </main>
+
+        <!-- Split.js - used to make the column layout.  -->
+        <script src="https://unpkg.com/split.js/dist/split.min.js"></script>
+        <script src="./js/functions.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
